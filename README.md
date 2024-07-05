@@ -41,11 +41,11 @@ Update your settings.py with the necessary configurations for SAML2 and JWT inte
 Also go to the https://stubidp.sustainsys.com/Metadata/BrowserFriendly and downlod the metadata xml file
 and put it in the saml2 directory. Or instead you can change the `metadata` config inside `SAML_CONFIG` as:
 
-    ```sh
-    'metadata': {
-            'remote': [{'url': 'https://stubidp.sustainsys.com/Metadata/BrowserFriendly'},]
-        },
-    ```
+```sh
+'metadata': {
+        'remote': [{'url': 'https://stubidp.sustainsys.com/Metadata/BrowserFriendly'},]
+    },
+```
 
 
 ### Certificates
