@@ -39,7 +39,12 @@ This project implements a Django REST Framework project configured as a SAML2 Se
 Django Settings
 Update your settings.py with the necessary configurations for SAML2 and JWT integration.
 Also go to the https://stubidp.sustainsys.com/Metadata/BrowserFriendly and downlod the metadata xml file
-and put it in the saml2 directory.
+and put it in the saml2 directory. Or instead you can change the `metadata` config inside `SAML_CONFIG` as:
+
+```sh
+'metadata': {
+        'remote': [{'url': 'https://stubidp.sustainsys.com/Metadata/BrowserFriendly'},]
+    },
 
 ### Certificates
 You need to generate a private key and public certificate:
