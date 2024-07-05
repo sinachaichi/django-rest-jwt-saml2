@@ -162,8 +162,7 @@ cython_debug/
 #.idea/
 saml2/*
 !saml2/
-!saml2/.gitkeep
+
 
 certificates/*
 !certificates/
-!certificates/.gitkeep
